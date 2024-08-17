@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_login_mobile.css">
+    <link rel="stylesheet" href="style_login_tablete.css">
+    <link rel="stylesheet" href="style_login_pc.css">
+</head>
+<body>
+    <main>
+        <section id="imagem_tablete"></section>
+
+        <section id="sectionMain">
+            <section id="login" class="hidden" onmouseenter="">
+                <div id="div_logo">
+                    <img src="IMG/SENAI_São_Paulo_logo.png" alt="agendaSenai_png" id="agendaSenai_png">
+                </div>
+                <div id="div_p_bemvindo">
+                    <div id="div_p_bemvindo02">
+                        <p id="p_bemvindo">Seja bem-vindo(a). Faça o login para acessar a agenda senai ou cadastre-se como novo usuário.</p>
+                    </div>
+                    
+                </div>
+                <div>
+                   <p id="p_usuario">Usuário</p>
+                </div>
+    
+    
+                <div id="div_email" class="border_black">
+                    <div id="div_inputs02">
+                        <label for="input_email"><img src="IMG/icons8-usuário-40.png" alt="icone_usuario" id="icone_usuario"></label>
+                        <input type="email" name="input_email" id="input_email" placeholder="Digite seu e-mail">
+                    </div>
+                </div>
+    
+                <div>
+                    <p id="p_senha">Senha</p>
+                </div>
+                <div id="div_senha" class="border_black">
+                    <div id="div_inputs02">
+                        <label for="input_password"><img src="IMG/senha.png" alt="icone_senha" id="icone_senha"></label>
+                        <input type="password" name="input_password" id="input_password" placeholder="Digite sua senha">
+                    </div>    
+                </div>
+    
+                <div id="div_span">
+                    <span id="span_error">Credencias inválidas!</span>
+                </div>
+                
+                <div id="div_entrar">
+                    <button id="btn_entrar">Entrar</button>
+                </div>
+                <div id="div_cadastro">
+                    <p id="p_cadastro">Não possui conta? <a href="pagina02_cadastro.html" id="a_pagLogin">Clique aqui</a></p>
+                    
+                </div>
+            </section>
+        </section>
+
+        <section id="imagem_tablete02"></section>
+    </main>
+    <script src="index_login.js"></script>
+</body>
+</html>

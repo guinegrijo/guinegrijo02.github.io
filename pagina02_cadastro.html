@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style_cadastro_mobile.css">
+    <link rel="stylesheet" href="style_cadastro_tablete.css">
+    <link rel="stylesheet" href="style_cadastro_pc.css">
+</head>
+
+<body>
+    <main>
+
+
+        <section id="imagem_tablete"></section>
+
+        <section id="sectionMain">
+
+            <div id="msg_validacao">
+                <div id="div_msg">
+                    <p id="p_msg">Cadastro efetuado com sucesso</p>
+                    <img src="IMG/icons8-aviso-de-aviso-50.png" alt="icone verde" id="icone_verde">
+                </div>
+            </div>
+
+            <section id="cadastro" class="hidden">
+                <form method="post" id="form">
+                    <div id="div_logo">
+                        <img src="IMG/SENAI_São_Paulo_logo.png" alt="agendaSenai_png" id="agendaSenai_png">
+                    </div>
+
+                    <div id="div_p_cadastrar">
+                        <p id="p_cadastrar">Cadastrar-se</p>
+                    </div>
+
+                    <div id="inputs_cadastro">
+
+                        <span class="span-required">Nome deve conter no mínimo 3 caracteres</span>
+
+                        <div id="div_nome">
+                            <input type="text" name="input_nome" id="input_nome" class="required"
+                                placeholder="Digite seu nome" oninput="nameValidacao()">
+                        </div>
+
+                        <span class="span-required">Digite um email válido</span>
+
+                        <div id="div_email">
+                            <input type="text" name="input_email" id="input_email" class="required"
+                                placeholder="Digite seu e-mail" oninput="emailValidacao()">
+                        </div>
+
+                        <span class="span-required">Digite uma senha com no mínimo 8 caracteres </span>
+
+                        <div id="div_senha">
+                            <input type="password" name="input_password" id="input_password" class="required"
+                                placeholder="Digite sua senha" oninput="mainPasswordValidacao()" autocomplete="off">
+                        </div>
+
+                        <span class="span-required">Senhas devem ser compatíveis</span>
+
+                        <div id="div_confSenha">
+                            <input type="password" name="input_conf_password" id="input_conf_password" class="required"
+                                placeholder="Confirme sua senha" oninput="comparePassword()" autocomplete="off">
+                        </div>
+                    </div>
+
+
+                    <div id="btn_finais">
+                        <div id="div_voltar">
+                            <a href="pagina01_Login.html" id="a_voltar">Voltar</a>
+                        </div>
+
+                        <div id="div_criarConta">
+                            <input type="submit" value="Criar conta" class="btn_criarConta">
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </section>
+
+        <section id="imagem_tablete02"></section>
+    </main>
+    <script src="index_cadastro.js"></script>
+</body>
+
+</html>
